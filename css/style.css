@@ -388,3 +388,12 @@ body, html {
         .restaurant-card-body {
             padding: 20px;
         }
+.container-signin{
+    background-image: url('../assets/img/fondo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text-center{
+    color:white;
+}
