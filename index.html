@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>BOOKEAT</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+
+	    <div class="header-options full-box">
+	        <nav style="margin: 23rem;" class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="inicio.html" >Restaurantes</a>
+	                </li>
+	            </ul>
+	        </nav>
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+
+
+	<!-- Content -->
+	<div class="banner">
+	    <div class="banner-body">
+	        <h3 class="text-uppercase">Bienvenido a <strong>BOOKEAT</strong></h3>
+	        <p>Del Móvil a la Mesa</p>
+	        <a href="signin.html" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Identifícate</a>
+		</br>
+			<a href="registration.html" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Regístrate</a>
+	    </div>
+
+
+	</div>
+
+	<div class="container container-web-page">
+	    <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Nuestros servicios</h3>
+	    <br>
+	    <div class="row">
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-shipping-fast fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Envíos a domicilio</h5>
+	            <p class="text-center">Pide a más de 300 restaurantes con nuestro servicio a domicilio en línea</p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-utensils fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Ofertas semanales</h5>
+	            <p class="text-center">Busca las mejores ofertas, de los mejores restaurantes en tu zona </p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-store-alt fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Reservaciones de local</h5>
+	            <p class="text-center">No esperes más.Reserva con nosotros en mas de 1000 restaurantes y sáltate las colas</p>
+	        </div>
+	    </div>
+	</div>
+
+	<hr>
+
+	<div class="container-fluid container-web-page">
+	    <h3 class="text-center text-uppercase poppins-regular font-weight-bold">¿Qué te apetece comer hoy?</h3>
+	    <div class="container-cards full-box mb-4">
+			<div class="card-restaurant div-bordered bg-white shadow-2">
+				<figure class="card-restaurant-img">
+					<img class="img-fluid" src="./assets/fotosRestaurantes/chino.jpg" alt="restaurante_chino">
+				</figure>
+				<div class="card-restaurant-body">
+					<div class="card-restaurant-content">
+						<h5 class="text-center fw-bolder">El Dragón Dorado</h5>
+						<p class="card-restaurant-location text-center">Calle de la Fortuna, 88</p>
+						<span class="full-box text-center text-muted" style="display: block;">Abierto ahora</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card-restaurant div-bordered bg-white shadow-2">
+				<figure class="card-restaurant-img">
+					<img class="img-fluid" src="./assets/fotosRestaurantes/indio.jpg" alt="restaurante_indio">
+				</figure>
+				<div class="card-restaurant-body">
+					<div class="card-restaurant-content">
+						<h5 class="text-center fw-bolder">Sabores de la India</h5>
+						<p class="card-restaurant-location text-center">Avenida del Sabor, 123</p>
+						<span class="full-box text-center text-muted" style="display: block;">Abierto ahora</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card-restaurant div-bordered bg-white shadow-2">
+				<figure class="card-restaurant-img">
+					<img class="img-fluid" src="./assets/fotosRestaurantes/pizzeria.jpg" alt="pizzeria">
+				</figure>
+				<div class="card-restaurant-body">
+					<div class="card-restaurant-content">
+						<h5 class="text-center fw-bolder">La Bella Napoli</h5>
+						<p class="card-restaurant-location text-center">Plaza de la Pizza, 5</p>
+						<span class="full-box text-center text-muted" style="display: block;">Abierto ahora</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card-restaurant div-bordered bg-white shadow-2">
+				<figure class="card-restaurant-img">
+					<img class="img-fluid" src="./assets/fotosRestaurantes/burger_joint.jpg" alt="hamburgueseria">
+				</figure>
+				<div class="card-restaurant-body">
+					<div class="card-restaurant-content">
+						<h5 class="text-center fw-bolder">Burger Supreme</h5>
+						<p class="card-restaurant-location text-center">Calle de las Hamburguesas, 10</p>
+						<span class="full-box text-center text-muted" style="display: block;">Abierto ahora</span>
+					</div>
+				</div>
+			</div>
+	</div>
+	<p class="text-center"><a href="inicio.html" class="btn btn-primary"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Más Restaurantes</a></p>
+	<hr>
+
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Arnau Aira 2024</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >El Salvador</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i>Monforte de Lemos, Galicia, España</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://es-la.facebook.com/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.instagram.com/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Instagram
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
+</body>
+</html>

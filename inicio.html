@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Restaurant</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<!-- Sweet Alert V10.13.0 -->
+	<script src="./js/sweetalert2.js" ></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body id="main-body">
+
+	<!-- Header -->
+	<header class="header full-box bg-white">
+	    <div class="header-brand full-box">
+	        <a href="index.html">
+	            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+	        </a>
+            <h1>BOOKEAT</h1>
+	    </div>
+
+	    <div class="header-options full-box">
+	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+	            <ul class="list-unstyled full-box" >
+	                <li>
+	                    <a href="index.html" >Inicio</a>
+	                </li>
+	                <li>
+	                    <a href="inicio.html" >Restaurantes</a>
+	                </li>
+	                <li>
+	                    <a href="registration.html" >Regístrate</a>
+	                </li>
+	                <li>
+	                    <a href="signin.html" >Login</a>
+	                </li>
+	            </ul>
+	        </nav>
+	        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario" >
+	            <i class="fas fa-user-circle"></i>
+	        </div>
+	        <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
+	            <p class="text-center" style="padding-top: 10px;">
+	                <i class="fas fa-user-circle fa-3x"></i><br>
+	                <small>Nombre de usuario</small>
+	            </p>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard
+	            </a>
+	            <a class="dropdown-item" href="javascript:void(0);">
+	                <i class="fas fa-sign-out-alt"></i> &nbsp; Cerrar sesión
+	            </a>
+	        </div>
+
+	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+	            <i class="fas fa-bars"></i>
+	        </a>
+	    </div>
+	</header>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 1">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 1</h5>
+                    <p class="card-text">Descripción del restaurante 1.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 2">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 2</h5>
+                    <p class="card-text">Descripción del restaurante 2.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 3">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 3</h5>
+                    <p class="card-text">Descripción del restaurante 3.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 1">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 1</h5>
+                    <p class="card-text">Descripción del restaurante 1.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 2">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 2</h5>
+                    <p class="card-text">Descripción del restaurante 2.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 3">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 3</h5>
+                    <p class="card-text">Descripción del restaurante 3.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 1">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 1</h5>
+                    <p class="card-text">Descripción del restaurante 1.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 2">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 2</h5>
+                    <p class="card-text">Descripción del restaurante 2.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 3">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 3</h5>
+                    <p class="card-text">Descripción del restaurante 3.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 1">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 1</h5>
+                    <p class="card-text">Descripción del restaurante 1.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 2">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 2</h5>
+                    <p class="card-text">Descripción del restaurante 2.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="restaurant-card">
+                <img src="https://via.placeholder.com/300" alt="Restaurant 3">
+                <div class="restaurant-card-body">
+                    <h5 class="card-title">Restaurante 3</h5>
+                    <p class="card-text">Descripción del restaurante 3.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                    <a href="#" class="btn btn-success">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

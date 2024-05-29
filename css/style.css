@@ -1,0 +1,390 @@
+/* Fuentes personalizadas */
+@font-face {
+    font-family: 'roboto_medium_regular';
+    src: url('../webfonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../webfonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_condensed_light';
+    src: url('../webfonts/robotocondensed-light-webfont.woff2') format('woff2'),
+         url('../webfonts/robotocondensed-light-webfont.woff') format('woff'),
+         url('../webfonts/robotocondensed-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_condensed_regular';
+    src: url('../webfonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+         url('../webfonts/robotocondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../webfonts/popins/poppins-regular-webfont.eot');
+    src: url('../webfonts/popins/poppins-regular-webfont.woff2') format('woff2'),
+         url('../webfonts/popins/poppins-regular-webfont.woff') format('woff'),
+         url('../webfonts/popins/poppins-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Variables de color */
+:root {
+    --color-one: #F5F5F5;
+    --color-two: #24292E;
+    --color-three: #EC5252;
+    --form-color: #14111A;
+    --accent-color: #253556;
+    --border-color: #D8D8D8;
+    --header-height: 60px;
+}
+
+/* Estilos generales para el cuerpo y HTML */
+body, html {
+    font-family: 'roboto_condensed_light';
+    width: 100%;
+    height: 100%;
+    color: var(--bs-black);
+    font-size: 16px;
+}
+
+.full-box {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.div-bordered {
+    border: 1px solid #E1E1E1;
+}
+
+/* Estilos de texto */
+.roboto-medium {
+    font-family: 'roboto_medium_regular';
+}
+
+.roboto-condensed-light {
+    font-family: 'roboto_condensed_light';
+}
+
+.roboto-condensed-regular {
+    font-family: 'roboto_condensed_regular';
+}
+
+.poppins-regular {
+    font-family: 'poppinsregular';
+}
+
+/* Estilos de la barra de navegación */
+.header,
+.header-brand,
+.header-options,
+.header-navbar,
+.header-button {
+    height:6em;
+    transition: all .2s ease-in-out;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    position: relative;
+    color: var(--text-color);
+    display: flex;
+}
+
+.header-brand {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-brand img {
+    max-width:10em;
+}
+
+.header-options {
+    width: 75%;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-navbar {
+    width: auto;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.header-navbar ul,
+.header-navbar ul li,
+.header-navbar ul li a {
+    width: auto;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.header-navbar > ul > li,
+.header-navbar > ul > li > a,
+.header-button,
+.header-button > i {
+    display: inline-block;
+    height: var(--header-height);
+    line-height: var(--header-height);
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+
+.header-button > i {
+    cursor: pointer;
+    width: 100%;
+}
+
+.header-navbar > ul > li > a {
+    padding: 0 15px;
+    font-size: calc(var(--header-height) / 3.5);
+}
+
+.header-navbar > ul > li > a,
+.header-button {
+    color: var(--text-color);
+}
+
+.header-navbar > ul > li > a:hover,
+.header-button:hover {
+    text-decoration: none;
+    color: var(--link-hover);
+}
+
+.header-button {
+    width: var(--header-height);
+    padding: 0;
+    margin: 0;
+    font-size: calc(var(--header-height) / 3);
+}
+
+.bag-count {
+    position: absolute;
+    top: calc(var(--header-height) - (var(--header-height) / 1.2));
+    right: 5px;
+    font-size: 13px;
+}
+
+.popup-login {
+    inset: 9px auto auto 0px !important;
+    z-index: 99999;
+}
+
+.popup-login::after,
+.popup-login::before {
+    bottom: 100%;
+    right: 20px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.popup-login::after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #fff;
+    border-width: 8px;
+    margin-right: 0px;
+}
+
+.popup-login::before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #ccc;
+    border-width: 9px;
+    margin-right: -1px;
+}
+
+/* Estilos del banner */
+.banner {
+    height: calc(100vh - var(--header-height));
+    position: relative;
+    background-position: center;
+    background-image: url('../assets/img/banner_1.jpg');
+    background-size: cover;
+    animation: banner 15s infinite linear;
+}
+
+.banner-body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: #FFF;
+    font-family: 'poppinsregular';
+    text-align: center;
+}
+
+.banner::before {
+    content: "";
+    background: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url('../assets/img/banner_1.jpg');
+    }
+
+    33% {
+        background-image: url('../assets/img/banner_1.jpg');
+    }
+
+	34% {
+		background-image: url('../assets/img/banner_2.jpg');
+	}
+	
+    66% {
+        background-image: url('../assets/img/banner_2.jpg');
+    }
+
+    67% {
+        background-image: url('../assets/img/banner_3.jpg');
+    }
+
+    100% {
+        background-image: url('../assets/img/banner_3.jpg');
+    }
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #E1E1E1;
+    padding: 70px 0 40px 0;
+    font-family: 'poppinsregular', sans-serif;
+    background-color: rgb(251, 251, 251);
+    color: var(--accent-color);
+}
+
+.footer-link {
+    text-decoration: none !important;
+    color: var(--accent-color);
+}
+
+.footer-link:hover {
+    color: var(--accent-color);
+}
+
+/* Estilos de contenedores web */
+.container-web-page {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+ /*Estilos para los cards de restaurantes */
+.container-cards {
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-restaurant {
+    width: 300px;
+    height: auto;
+    margin: 15px;
+    position: relative;
+    border-radius: 10px;
+    color: var(--accent-color);
+}
+
+.card-restaurant-img,
+.card-restaurant-body {
+    position: relative;
+    width: 298px;
+}
+
+.card-restaurant-img {
+    height: 200px; /* Ajusta la altura de la imagen según lo necesites */
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    padding: 0;
+}
+
+.card-restaurant-img img {
+    width: 100%;
+    height: calc(100% - 1px);
+}
+
+.card-restaurant-body {
+    border-radius: 0 0 10px 10px;
+    height: 150px; /* Ajusta la altura del cuerpo del card según lo necesites */
+}
+
+.card-restaurant-content {
+    height: 100px; /* Ajusta la altura del contenido del card según lo necesites */
+    padding: 20px 10px 0 10px;
+    overflow: hidden;
+}
+
+.card-restaurant-content:hover {
+    overflow: auto;
+}
+
+.card-restaurant-options {
+    height: 50px; /* Ajusta la altura de las opciones del card según lo necesites */
+}
+/* estilos login cliente */
+.container-signin{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: calc(100vh - var(--header-height));
+}
+.login-content{
+	width: 95%;
+	max-width: 320px;
+	height: auto;
+	background-color: #FFF;
+	padding: 15px;
+	color: #333;
+	border-radius: 5px;
+}
+.login-icon{
+	max-width: 125px;
+	margin: 0 auto;
+	display: block;
+	box-shadow: 0 0 1px 3px #1266F1;
+	border-radius: 100%;
+}
+        /* Estilos personalizados */
+        .restaurant-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .restaurant-card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .restaurant-card-body {
+            padding: 20px;
+        }
