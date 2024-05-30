@@ -54,6 +54,7 @@ body, html {
     font-size: 16px;
 }
 
+/* Estilos generales de caja y bordes */
 .full-box {
     margin: 0;
     padding: 0;
@@ -88,7 +89,7 @@ body, html {
 .header-options,
 .header-navbar,
 .header-button {
-    height:6em;
+    height: 5.8em;
     transition: all .2s ease-in-out;
     box-sizing: border-box;
     padding: 0;
@@ -110,7 +111,7 @@ body, html {
 }
 
 .header-brand img {
-    max-width:10em;
+    max-width: 10em;
 }
 
 .header-options {
@@ -123,8 +124,6 @@ body, html {
 
 .header-navbar {
     width: auto;
-    padding-top: 0;
-    margin-top: 0;
 }
 
 .header-navbar ul,
@@ -252,10 +251,10 @@ body, html {
         background-image: url('../assets/img/banner_1.jpg');
     }
 
-	34% {
-		background-image: url('../assets/img/banner_2.jpg');
-	}
-	
+    34% {
+        background-image: url('../assets/img/banner_2.jpg');
+    }
+
     66% {
         background-image: url('../assets/img/banner_2.jpg');
     }
@@ -269,13 +268,182 @@ body, html {
     }
 }
 
-/* Footer */
+/* Estilos para el menú de hamburguesa */
+.hamburger-menu {
+    display: none; /* El menú de hamburguesa está oculto inicialmente */
+}
+
+.hamburger-icon {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+}
+
+
+/* Estilos de la sección Hero */
+.hero-section {
+    background-image: url('../assets/img/banner.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: black;
+    text-align: center;
+}
+
+.hero-section .content-box {
+    background-color: rgba(211, 211, 211, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.hero-section .form-control, 
+.hero-section .btn {
+    display: inline-block;
+    width: auto;
+    margin: 5px;
+}
+
+/* Estilos de la sección de tarjetas de restaurantes */
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-restaurant {
+    width: 300px;
+    margin: 15px;
+    position: relative;
+    border-radius: 10px;
+    color: var(--accent-color);
+    border: 1px solid #ccc;
+}
+
+.card-restaurant-img,
+.card-restaurant-body {
+    position: relative;
+    width: 100%;
+}
+
+.card-restaurant-img {
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-restaurant-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-restaurant-body {
+    border-radius: 0 0 10px 10px;
+    height: 150px; 
+    padding: 10px;
+}
+
+.card-restaurant-content {
+    height: 100px; 
+    padding: 10px;
+    overflow: hidden;
+}
+
+.card-restaurant-content:hover {
+    overflow: auto;
+}
+
+.card-restaurant-options {
+    height: 50px; 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Estilos de login */
+.container-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100;
+}
+/* Estilos de login */
+.container-signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background-image: url('../assets/img/fondo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-content {
+    width: 95%;
+    max-width: 320px;
+    background-color: #FFF;
+    padding: 15px;
+    color: #333;
+    border-radius: 5px;
+}
+
+.login-icon {
+    max-width: 125px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 1px 3px #1266F1;
+    border-radius: 100%;
+}
+
+/* Estilos del texto centrado */
+.text-center {
+    color: white;
+}
+.text-white {
+    font-weight: 800;
+    color: #000; 
+}
+
+.text-white .change-location {
+    color: red; /* Color rojo por defecto */
+}
+
+.text-white:hover .change-location {
+    color: #FFA900; /* Color naranja al pasar el ratón */
+}
+
+
+/* Estilos del pie de página */
 .footer {
     border-top: 1px solid #E1E1E1;
     padding: 70px 0 40px 0;
     font-family: 'poppinsregular', sans-serif;
     background-color: rgb(251, 251, 251);
     color: var(--accent-color);
+}
+
+.footer .container .row .col-12 ul li,
+.footer .container .row .col-12 ul li a {
+    color: #695d46;
+}
+
+.footer .container .row .col-12 ul li a:hover {
+    color: #4d4535; /* Un tono más oscuro para el efecto hover */
 }
 
 .footer-link {
@@ -287,113 +455,167 @@ body, html {
     color: var(--accent-color);
 }
 
-/* Estilos de contenedores web */
+/* Contenedores web */
 .container-web-page {
     padding-top: 50px;
     padding-bottom: 30px;
-
 }
 
- /*Estilos para los cards de restaurantes */
-.container-cards {
-   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.row {
+    margin-left: -10px; /* Ajuste del espacio entre las columnas */
+    margin-right: -10px; /* Ajuste del espacio entre las columnas */
+}
+
+.col-md-4 {
+    padding-left: 10px; /* Ajuste del espacio entre las columnas */
+    padding-right: 10px; /* Ajuste del espacio entre las columnas */
+}
+
+.restaurant-card {
+    border: 1px solid #ccc; /* Borde del card */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Para que las esquinas redondeadas se muestren correctamente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+.restaurant-card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
+}
+
+.restaurant-card img {
+    width: 100%; /* Ajustar imagen al ancho del card */
+    max-height: 150px; /* Altura máxima de la imagen */
+    object-fit: cover; /* Escalar imagen para ajustarse */
+    border-bottom: 1px solid #ccc; /* Línea divisoria bajo la imagen */
+}
+
+.restaurant-card-body {
+    padding: 20px; /* Espaciado interno */
+}
+
+.restaurant-card-body .btn {
+    margin-top: 10px; /* Espaciado entre botones y otros elementos */
+    margin-right: 5px; /* Espaciado entre botones */
+}
+
+.restaurant-card-body .btn-primary {
+    background-color: #FFA900; /* Color naranja para "Más información" */
+    border-color: #FFA900; /* Borde del mismo color que el fondo */
+    color: #fff; /* Texto blanco */
+}
+
+.restaurant-card-body .btn-success {
+    background-color: #695D46; /* Color marrón para "Reservar" */
+    border-color: #695D46; /* Borde del mismo color que el fondo */
+    color: #fff; /* Texto blanco */
+}
+.container.container-web-page {
+    color: black;
+}
+
+.container.container-web-page h3,
+.container.container-web-page h5,
+.container.container-web-page p,
+.container.container-web-page span {
+    color: black;
+}
+.card-restaurant-content h5,
+.card-restaurant-content p,
+.card-restaurant-content span {
+    color: #000; /* Código hexadecimal para el color negro */
+}
+
+.container-registration {
+    display: flex;
     justify-content: center;
-}
-
-.card-restaurant {
-    width: 300px;
-    height: auto;
-    margin: 15px;
-    position: relative;
-    border-radius: 10px;
-    color: var(--accent-color);
-}
-
-.card-restaurant-img,
-.card-restaurant-body {
-    position: relative;
-    width: 298px;
-}
-
-.card-restaurant-img {
-    height: 200px; /* Ajusta la altura de la imagen según lo necesites */
-    overflow: hidden;
-    border-radius: 10px 10px 0 0;
-    margin: 0;
-    padding: 0;
-}
-
-.card-restaurant-img img {
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: calc(100% - 1px);
-}
-
-.card-restaurant-body {
-    border-radius: 0 0 10px 10px;
-    height: 150px; /* Ajusta la altura del cuerpo del card según lo necesites */
-}
-
-.card-restaurant-content {
-    height: 100px; /* Ajusta la altura del contenido del card según lo necesites */
-    padding: 20px 10px 0 10px;
-    overflow: hidden;
-}
-
-.card-restaurant-content:hover {
-    overflow: auto;
-}
-
-.card-restaurant-options {
-    height: 50px; /* Ajusta la altura de las opciones del card según lo necesites */
-}
-/* estilos login cliente */
-.container-signin{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	height: calc(100vh - var(--header-height));
-}
-.login-content{
-	width: 95%;
-	max-width: 320px;
-	height: auto;
-	background-color: #FFF;
-	padding: 15px;
-	color: #333;
-	border-radius: 5px;
-}
-.login-icon{
-	max-width: 125px;
-	margin: 0 auto;
-	display: block;
-	box-shadow: 0 0 1px 3px #1266F1;
-	border-radius: 100%;
-}
-        /* Estilos personalizados */
-        .restaurant-card {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .restaurant-card img {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            height: 200px;
-            object-fit: cover;
-        }
-        .restaurant-card-body {
-            padding: 20px;
-        }
-.container-signin{
+    height: 100vh;
     background-image: url('../assets/img/fondo.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.text-center{
-    color:white;
+
+.container-registration form {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid transparent; 
+    border-radius: 10px; 
+    margin: 5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #000; 
+
 }
+
+.container-registration form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container-registration form legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-registration form label {
+    font-weight: bold;
+}
+
+.container-registration form p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-registration form .btn {
+    margin-top: 10px;
+}
+
+.container-registration form small {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container-registration form input[type="text"],
+.container-registration form input[type="email"],
+.container-registration form input[type="password"],
+.container-registration form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff; /* Borde blanco */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia */
+    color: #000; /* Texto blanco */
+}
+
+.container-registration form input[type="text"]:focus,
+.container-registration form input[type="email"]:focus,
+.container-registration form input[type="password"]:focus,
+.container-registration form select:focus {
+    outline: none;
+    border-color: #5bc0de; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(91, 192, 222, 0.5); /* Añade una sombra al enfocar */
+}
+.text-justify{
+    color:#F5F5F5;
+    text-align: center;
+    font-weight: 600px;
+}
+.container-registration form .btn {
+    margin-top: 10px;
+    color: #fff; /* Color del texto del botón */
+    background-color: #FFA900; /* Color de fondo del botón */
+    border-color: #FFA900; /* Color del borde del botón */
+}
+
+.container-registration form .btn:hover {
+    background-color: #ffa900; /* Color de fondo del botón al pasar el ratón */
+}
+
+

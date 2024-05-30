@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurantes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-</head>
-<!DOCTYPE html>
-<html lang="es">
-<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Restaurant</title>
+	<title>BOOKEAT</title>
 
 	<!-- Normalize V8.0.1 -->
 	<link rel="stylesheet" href="./css/normalize.css">
@@ -35,207 +25,153 @@
 
 	<!-- Header -->
 	<header class="header full-box bg-white">
-	    <div class="header-brand full-box">
+
+		<div class="header-brand full-box">
 	        <a href="index.html">
 	            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
 	        </a>
             <h1>BOOKEAT</h1>
 	    </div>
-
-	    <div class="header-options full-box">
-	        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
-	            <ul class="list-unstyled full-box" >
-	                <li>
-	                    <a href="index.html" >Inicio</a>
-	                </li>
-	                <li>
-	                    <a href="inicio.html" >Restaurantes</a>
-	                </li>
-	                <li>
-	                    <a href="registration.html" >Regístrate</a>
-	                </li>
-	                <li>
-	                    <a href="signin.html" >Login</a>
-	                </li>
-	            </ul>
-	        </nav>
-	        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario" >
-	            <i class="fas fa-user-circle"></i>
-	        </div>
-	        <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
-	            <p class="text-center" style="padding-top: 10px;">
-	                <i class="fas fa-user-circle fa-3x"></i><br>
-	                <small>Nombre de usuario</small>
-	            </p>
-	            <a class="dropdown-item" href="javascript:void(0);">
-	                <i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard
-	            </a>
-	            <a class="dropdown-item" href="javascript:void(0);">
-	                <i class="fas fa-sign-out-alt"></i> &nbsp; Cerrar sesión
-	            </a>
-	        </div>
-
-	        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
-	            <i class="fas fa-bars"></i>
-	        </a>
-	    </div>
 	</header>
-<body>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 1">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 1</h5>
-                    <p class="card-text">Descripción del restaurante 1.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 2">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 2</h5>
-                    <p class="card-text">Descripción del restaurante 2.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 3">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 3</h5>
-                    <p class="card-text">Descripción del restaurante 3.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 1">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 1</h5>
-                    <p class="card-text">Descripción del restaurante 1.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 2">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 2</h5>
-                    <p class="card-text">Descripción del restaurante 2.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 3">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 3</h5>
-                    <p class="card-text">Descripción del restaurante 3.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+	<!-- Content -->
+	<div class="banner">
+	    <div class="banner-body">
+	        <h3 class="text-uppercase">Bienvenido a <strong>BOOKEAT</strong></h3>
+	        <p>Del Móvil a la Mesa</p>
+	        <a href="signin.html" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Identifícate</a>
+		</br>
+			<a href="registration.html" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Regístrate</a>
+	    </div>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 1">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 1</h5>
-                    <p class="card-text">Descripción del restaurante 1.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 2">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 2</h5>
-                    <p class="card-text">Descripción del restaurante 2.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 3">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 3</h5>
-                    <p class="card-text">Descripción del restaurante 3.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 1">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 1</h5>
-                    <p class="card-text">Descripción del restaurante 1.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 2">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 2</h5>
-                    <p class="card-text">Descripción del restaurante 2.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="restaurant-card">
-                <img src="https://via.placeholder.com/300" alt="Restaurant 3">
-                <div class="restaurant-card-body">
-                    <h5 class="card-title">Restaurante 3</h5>
-                    <p class="card-text">Descripción del restaurante 3.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
-                    <a href="#" class="btn btn-success">Reservar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+	</div>
+	<div class="container container-web-page">
+	    <h3 class="text-center text-uppercase poppins-regular font-weight-bold">Nuestros servicios</h3>
+	    <br>
+	    <div class="row">
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-shipping-fast fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Envíos a domicilio</h5>
+	            <p class="text-center">Pide a más de 300 restaurantes con nuestro servicio a domicilio en línea</p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-utensils fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Ofertas semanales</h5>
+	            <p class="text-center">Busca las mejores ofertas, de los mejores restaurantes en tu zona </p>
+	        </div>
+	        <div class="col-12 col-sm-6 col-md-4">
+	            <p class="text-center"><i class="fas fa-store-alt fa-5x"></i></p>
+	            <h5 class="text-center text-uppercase poppins-regular font-weight-bold">Reservaciones de local</h5>
+	            <p class="text-center">No esperes más.Reserva con nosotros en mas de 1000 restaurantes y sáltate las colas</p>
+	        </div>
+	    </div>
+	</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+	<hr>
+
+	<div class="container-fluid container-web-page">
+	    <h3 class="text-center text-uppercase poppins-regular font-weight-bold" style="color: black;">¿Qué te apetece comer hoy?</h3>
+	    <div class="container-cards full-box mb-4">
+			<div class="card-restaurant div-bordered bg-white shadow-2">
+				<figure class="card-restaurant-img">
+					<img class="img-fluid" src="./assets/fotosRestaurantes/chino.jpg" alt="restaurante_chino">
+				</figure>
+				<div class="card-restaurant-body">
+					<div class="card-restaurant-content">
+						<h5 class="text-center fw-bolder">El Dragón Dorado</h5>
+						<p class="card-restaurant-location text-center">Calle de la Fortuna, 88</p>
+						<span class="full-box text-center text-muted" style="display: block;">Abierto ahora</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card-restaurant div-bordered bg-white shadow-2">
+				<figure class="card-restaurant-img">
+					<img class="img-fluid" src="./assets/fotosRestaurantes/indio.jpg" alt="restaurante_indio">
+				</figure>
+				<div class="card-restaurant-body">
+					<div class="card-restaurant-content">
+						<h5 class="text-center fw-bolder">Sabores de la India</h5>
+						<p class="card-restaurant-location text-center">Avenida del Sabor, 123</p>
+						<span class="full-box text-center text-muted" style="display: block;">Abierto ahora</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card-restaurant div-bordered bg-white shadow-2">
+				<figure class="card-restaurant-img">
+					<img class="img-fluid" src="./assets/fotosRestaurantes/pizzeria.jpg" alt="pizzeria">
+				</figure>
+				<div class="card-restaurant-body">
+					<div class="card-restaurant-content">
+						<h5 class="text-center fw-bolder">La Bella Napoli</h5>
+						<p class="card-restaurant-location text-center">Plaza de la Pizza, 5</p>
+						<span class="full-box text-center text-muted" style="display: block;">Abierto ahora</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card-restaurant div-bordered bg-white shadow-2">
+				<figure class="card-restaurant-img">
+					<img class="img-fluid" src="./assets/fotosRestaurantes/burger_joint.jpg" alt="hamburgueseria">
+				</figure>
+				<div class="card-restaurant-body">
+					<div class="card-restaurant-content">
+						<h5 class="text-center fw-bolder">Burger Supreme</h5>
+						<p class="card-restaurant-location text-center">Calle de las Hamburguesas, 10</p>
+						<span class="full-box text-center text-muted" style="display: block;">Abierto ahora</span>
+					</div>
+				</div>
+			</div>
+	</div>
+	<p class="text-center"><a href="restaurantes.html" class="btn btn-warning"><i class="fas fa-hamburger fa-fw"></i> &nbsp; Más Restaurantes</a></p>
+	<hr>
+
+
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" ><i class="far fa-copyright"></i> Arnau Aira 2024</h5></li>
+	                    <li> Todos los derechos reservados </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Monforte de Lemos</h5></li>
+	                    <li><i class="fas fa-map-marker-alt fa-fw"></i>Monforte de Lemos, Galicia, España</li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://es-la.facebook.com/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.instagram.com/" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Instagram
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+
+
+	<!-- MDBootstrap V5 -->
+	<script src="./js/mdb.min.js" ></script>
+
+	<!-- General scripts -->
+	<script src="./js/main.js" ></script>
 </body>
 </html>
