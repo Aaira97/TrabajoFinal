@@ -38,5 +38,23 @@ function toggleMenu() {
         navbar.style.display = "block";
     }
 }
+function validarFormulario() {
+	var nombre = document.getElementById('cliente_nombre').value;
+	var email = document.getElementById('cliente_email').value;
+	var clave1 = document.getElementById('cliente_clave_1').value;
+	var clave2 = document.getElementById('cliente_clave_2').value;
+
+	if (nombre == '' || email == '' || clave1 == '' || clave2 == '') {
+		Swal.fire('Por favor completa todos los campos obligatorios.');
+		return false;
+	}
+
+	if (clave1 !== clave2) {
+		Swal.fire('Las contraseñas no coinciden.');
+		return false;
+	}
+
+	return true;
+}
 
 
