@@ -6,40 +6,9 @@
     <title>Confirmación de Reserva</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-    <!-- General Styles -->
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        .background-image {
-            background-image: url('./assets/img/your-image.png'); /* Cambia la ruta según corresponda */
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .confirmation-box {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .confirmation-box h2 {
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .confirmation-box p {
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
-<body>
-
 <header class="header full-box bg-white">
-    <!-- Encabezado -->
     <div class="header-brand full-box">
         <a href="inicio.html">
             <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
@@ -48,24 +17,24 @@
     </div>
 
     <div class="header-options full-box">
-        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" id="navbar">
-            <ul class="list-unstyled full-box">
+        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" onclick="show_menu_mobile()" >
+            <ul class="list-unstyled full-box" >
                 <li>
-                    <a href="inicio.html">Inicio</a>
+                    <a href="inicio.html" >Inicio</a>
                 </li>
                 <li>
-                    <a href="restaurantes.html">Restaurantes</a>
+                    <a href="restaurantes.html" >Restaurantes</a>
                 </li>
                 <li>
-                    <a href="registration.html">Regístrate</a>
+                    <a href="registration.html" >Regístrate</a>
                 </li>
                 <li>
-                    <a href="signin.html">Login</a>
+                    <a href="signin.html" >Login</a>
                 </li>
             </ul>
         </nav>
 
-        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario">
+        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario" >
             <i class="fas fa-user-circle"></i>
         </div>
         <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
@@ -80,39 +49,61 @@
                 <i class="fas fa-sign-out-alt"></i> &nbsp; Cerrar sesión
             </a>
         </div>
-    </div>
 
-    <!-- Menú de hamburguesa para versión móvil -->
-    <div class="hamburger-menu" id="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+        <a href="javascript:void(0);" class="header-button full-box text-center d-lg-none" title="Menú" onclick="show_menu_mobile()" >
+            <i class="fas fa-bars"></i>
+        </a>
     </div>
 </header>
+<body class="confirm">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+            <h2 class="text-center mb-4">Confirmación de Reserva</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Tu reserva ha sido confirmada</h4>
+                    <p class="card-text text-center">Gracias por reservar con nosotros. A continuación, puedes ver los detalles de tu reserva:</p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><strong>Fecha:</strong> 31/05/2024</li>
+                        <li class="list-group-item"><strong>Hora:</strong> 13:00</li>
+                        <li class="list-group-item"><strong>Personas:</strong> 1</li>
+                        <li class="list-group-item"><strong>Ubicación:</strong> A Coruña</li>
+                    </ul>
+                    
+                    <div class="text-center">
+                        <a href="reserv_ok.html" class="btn btn-custom-success mb-4 w-100">Aceptar Reserva</a>
+                        <button class="btn btn-warning mb-4 w-100" data-toggle="collapse" data-target="#modificarReservaForm" aria-expanded="false" aria-controls="modificarReservaForm">Modificar Reserva</button>
+                    </div>
 
-<div class="background-image">
-    <div class="confirmation-box">
-        <h2>Confirmación de Reserva</h2>
-        <p><strong>Fecha:</strong> 31/05/2024</p>
-        <p><strong>Hora:</strong> 13:00</p>
-        <p><strong>Número de personas:</strong> 4</p>
-        <p>¡Gracias por reservar con nosotros!</p>
-        <button onclick="confirmarReserva()" class="btn btn-primary">Aceptar</button>
+                    <div class="collapse" id="modificarReservaForm">
+                        <form id="modificarReservaFormContent">
+                            <div class="form-group">
+                                <label for="fecha">Fecha</label>
+                                <input type="date" class="form-control" id="fecha" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="hora">Hora</label>
+                                <input type="time" class="form-control" id="hora" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="personas">Número de Personas</label>
+                                <input type="number" class="form-control" id="personas" min="1" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Confirmar Modificación</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <!-- Bootstrap JS y otros scripts -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.13.0/dist/sweetalert2.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<script src="./js/main.js"></script>
-<script>
-    function confirmarReserva() {
-        window.location.href = 'reserva-confirmada.html';
-    }
-</script>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src ="js/"></script>
 </body>
 </html>

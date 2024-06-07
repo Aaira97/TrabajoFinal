@@ -110,6 +110,13 @@ function validarFormulario() {
     // Si todas las validaciones pasan, el formulario se envía
     return true;
 }
+ 
+document.getElementById('modificarReservaFormContent').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // Lógica para modificar la reserva
+    Swal.fire('Reserva modificada exitosamente.');
+});
+
 
 
 

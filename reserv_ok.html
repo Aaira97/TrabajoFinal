@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Confirmada</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <!-- General Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .background-image {
+            background-image: url('./assets/img/your-image.png'); /* Cambia la ruta según corresponda */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .confirmation-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .confirmation-box h2 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .confirmation-box p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header full-box bg-white">
+    <!-- Encabezado -->
+    <div class="header-brand full-box">
+        <a href="inicio.html">
+            <img src="./assets/img/logo.png" alt="Designlopers" class="img-fluid">
+        </a>
+        <h1>BOOKEAT</h1>
+    </div>
+
+    <div class="header-options full-box">
+        <nav class="header-navbar full-box poppins-regular font-weight-bold scroll" id="navbar">
+            <ul class="list-unstyled full-box">
+                <li>
+                    <a href="inicio.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="restaurantes.html">Restaurantes</a>
+                </li>
+                <li>
+                    <a href="registration.html">Regístrate</a>
+                </li>
+                <li>
+                    <a href="signin.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-button full-box text-center" id="userMenu" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Nombre de usuario">
+            <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="dropdown-menu div-bordered popup-login" aria-labelledby="userMenu">
+            <p class="text-center" style="padding-top: 10px;">
+                <i class="fas fa-user-circle fa-3x"></i><br>
+                <small>Nombre de usuario</small>
+            </p>
+            <a class="dropdown-item" href="javascript:void(0);">
+                <i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard
+            </a>
+            <a class="dropdown-item" href="javascript:void(0);">
+                <i class="fas fa-sign-out-alt"></i> &nbsp; Cerrar sesión
+            </a>
+        </div>
+    </div>
+
+    <!-- Menú de hamburguesa para versión móvil -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+
+<div class="background-image">
+    <div class="confirmation-box">
+        <h2>Tu reserva ha sido confirmada</h2>
+        <p>¡Gracias por reservar con nosotros!</p>
+        <a href="restaurantes.html" class="btn btn-primary">Volver a Restaurantes</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS y otros scripts -->
+<script src="https://code.jquery
+_
